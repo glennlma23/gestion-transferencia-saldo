@@ -1,0 +1,440 @@
+openapi: 3.0.1
+info:
+  title: API de Gestión de Transferencias de Saldo
+  description: API desarrollada para administrar billeteras digitales, incluyendo la creación, actualización, eliminación y consulta de saldos.
+  version: v1
+paths:
+  /api/Movement/wallet/{walletId}:
+    get:
+      tags:
+        - Movement
+      summary: Obtiene todos los movimientos de una billetera por su ID.
+      parameters:
+        - name: walletId
+          in: path
+          description: ID de la billetera
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/MovementResponse'
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/MovementResponse'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/MovementResponse'
+  /api/Movement:
+    post:
+      tags:
+        - Movement
+      summary: Crea un nuevo movimiento (crédito o débito).
+      requestBody:
+        description: Datos del movimiento
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateMovementRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/CreateMovementRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/CreateMovementRequest'
+      responses:
+        '201':
+          description: Created
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/MovementResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MovementResponse'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/MovementResponse'
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+  /api/Wallet:
+    get:
+      tags:
+        - Wallet
+      summary: Método para obtener todas las billeteras existentes.
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WalletResponse'
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WalletResponse'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WalletResponse'
+    post:
+      tags:
+        - Wallet
+      summary: Método para registrar una nueva billetera.
+      requestBody:
+        description: Datos de la billetera a crear.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateWalletRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/CreateWalletRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/CreateWalletRequest'
+      responses:
+        '201':
+          description: Created
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/WalletResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WalletResponse'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/WalletResponse'
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+  /api/Wallet/document/{documentId}:
+    get:
+      tags:
+        - Wallet
+      summary: Método para obtener todas las billeteras de un determinado número de documento.
+      parameters:
+        - name: documentId
+          in: path
+          description: Documento de identidad del propietario de la billetera.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WalletResponse'
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WalletResponse'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WalletResponse'
+  /api/Wallet/{id}/document/{documentId}:
+    get:
+      tags:
+        - Wallet
+      summary: Método para obtener la billetera de un determinado número de documento y Id.
+      parameters:
+        - name: id
+          in: path
+          description: Identificador único de la billetera.
+          required: true
+          schema:
+            type: integer
+            format: int32
+        - name: documentId
+          in: path
+          description: Documento de identidad del propietario de la billetera.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/WalletResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WalletResponse'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/WalletResponse'
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+  /api/Wallet/{id}:
+    put:
+      tags:
+        - Wallet
+      summary: Método para actualizar una billetera con un determinado Id.
+      parameters:
+        - name: id
+          in: path
+          description: Identificador único de la billetera.
+          required: true
+          schema:
+            type: integer
+            format: int32
+      requestBody:
+        description: Datos actualizados de la billetera.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateWalletRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/UpdateWalletRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/UpdateWalletRequest'
+      responses:
+        '204':
+          description: No Content
+        '400':
+          description: Bad Request
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+    delete:
+      tags:
+        - Wallet
+      summary: Método para eliminar una billetera con un determinado Id.
+      parameters:
+        - name: id
+          in: path
+          description: Identificador único de la billetera.
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '204':
+          description: No Content
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ProblemDetails'
+components:
+  schemas:
+    CreateMovementRequest:
+      required:
+        - amount
+        - type
+        - walletId
+      type: object
+      properties:
+        walletId:
+          type: integer
+          description: Identificador único de la billetera.
+          format: int32
+          example: 1
+        amount:
+          minimum: 0.01
+          type: number
+          description: Monto de la transferencia.
+          format: double
+          example: 1
+        type:
+          maximum: 1
+          minimum: 0
+          type: integer
+          description: Tipo de operación (Crédito = 0 / Débito = 1).
+          format: int32
+          example: 0
+      additionalProperties: false
+    CreateWalletRequest:
+      required:
+        - documentId
+        - name
+      type: object
+      properties:
+        documentId:
+          minLength: 1
+          pattern: ^[a-zA-Z0-9]+$
+          type: string
+          description: Documento de identidad de la persona propietaria de la billetera.
+          example: '72319090'
+        name:
+          minLength: 1
+          pattern: ^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]+$
+          type: string
+          description: Nombre del propietario de la billetera.
+          example: Glenn Maura
+      additionalProperties: false
+    MovementResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Identificador único del movimiento.
+          format: int32
+          example: 1
+        walletId:
+          type: integer
+          description: Identificador único de la billetera.
+          format: int32
+          example: 1
+        amount:
+          type: number
+          description: Monto de la transferencia..
+          format: double
+          example: 1
+        type:
+          type: string
+          description: Tipo de operación (Crédito = 0 / Débito = 1).
+          nullable: true
+          example: '0'
+        createdAt:
+          type: string
+          description: Fecha del movimiento.
+          format: date-time
+          example: 05/08/2025 11:11:11
+      additionalProperties: false
+    ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+    UpdateWalletRequest:
+      required:
+        - name
+      type: object
+      properties:
+        name:
+          minLength: 1
+          type: string
+          description: Nombre del propietario de la billetera.
+          example: Glenn Maura
+      additionalProperties: false
+    WalletResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Identificador único.
+          format: int32
+          example: 1
+        documentId:
+          type: string
+          description: Documento de identidad de la persona propietaria de la billetera.
+          nullable: true
+          example: '72319090'
+        name:
+          type: string
+          description: Nombre del propietario de la billetera.
+          nullable: true
+          example: Glenn Maura
+        balance:
+          type: number
+          description: Saldo de la billetera.
+          format: double
+          example: 0
+        createdAt:
+          type: string
+          description: Fecha de apertura de la billetera.
+          format: date-time
+          example: 05/08/2025 11:11:11
+        updatedAt:
+          type: string
+          description: Fecha de última actualización de la billetera.
+          format: date-time
+          example: 05/08/2025 11:11:11
+      additionalProperties: false
