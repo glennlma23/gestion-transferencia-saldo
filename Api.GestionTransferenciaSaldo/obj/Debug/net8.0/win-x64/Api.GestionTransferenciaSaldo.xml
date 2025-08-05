@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api.GestionTransferenciaSaldo</name>
+    </assembly>
+    <members>
+        <member name="T:Api.GestionTransferenciaSaldo.Controllers.MovementController">
+            <summary>
+            API para gestionar movimientos de billeteras.
+            </summary>
+        </member>
+        <member name="M:Api.GestionTransferenciaSaldo.Controllers.MovementController.GetByWalletId(System.Int32)">
+            <summary>
+            Obtiene todos los movimientos de una billetera por su ID.
+            </summary>
+            <param name="walletId">ID de la billetera</param>
+            <returns>Lista de movimientos</returns>
+        </member>
+        <member name="M:Api.GestionTransferenciaSaldo.Controllers.MovementController.Create(Application.DTOs.Movement.CreateMovementRequest)">
+            <summary>
+            Crea un nuevo movimiento (crédito o débito).
+            </summary>
+            <param name="request">Datos del movimiento</param>
+            <returns>Movimiento creado</returns>
+        </member>
+        <member name="M:Api.GestionTransferenciaSaldo.Controllers.WalletController.GetAll">
+            <summary>
+            Método para obtener todas las billeteras existentes.
+            </summary>
+        </member>
+        <member name="M:Api.GestionTransferenciaSaldo.Controllers.WalletController.GetByDocumentId(System.String)">
+            <summary>
+            Método para obtener todas las billeteras de un determinado número de documento.
+            </summary>
+            <param name="documentId">Documento de identidad del propietario de la billetera.</param>
+        </member>
+        <member name="M:Api.GestionTransferenciaSaldo.Controllers.WalletController.GetByIdAndDocumentId(System.Int32,System.String)">
+            <summary>
+            Método para obtener la billetera de un determinado número de documento y Id.
+            </summary>
+            <param name="id">Identificador único de la billetera.</param>
+            <param name="documentId">Documento de identidad del propietario de la billetera.</param>
+        </member>
+        <member name="M:Api.GestionTransferenciaSaldo.Controllers.WalletController.Create(Application.DTOs.Wallet.CreateWalletRequest)">
+            <summary>
+            Método para registrar una nueva billetera.
+            </summary>
+            <param name="request">Datos de la billetera a crear.</param>
+        </member>
+        <member name="M:Api.GestionTransferenciaSaldo.Controllers.WalletController.Update(System.Int32,Application.DTOs.Wallet.UpdateWalletRequest)">
+            <summary>
+            Método para actualizar una billetera con un determinado Id.
+            </summary>
+            <param name="id">Identificador único de la billetera.</param>
+            <param name="request">Datos actualizados de la billetera.</param>
+        </member>
+        <member name="M:Api.GestionTransferenciaSaldo.Controllers.WalletController.Delete(System.Int32)">
+            <summary>
+            Método para eliminar una billetera con un determinado Id.
+            </summary>
+            <param name="id">Identificador único de la billetera.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,6 @@
+@ms_gestiontransferenciasaldo_HostAddress = http://localhost:5054
+
+GET {{ms_gestiontransferenciasaldo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

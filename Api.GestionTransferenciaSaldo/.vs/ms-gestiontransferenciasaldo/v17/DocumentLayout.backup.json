@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA58D04A-0FAC-5BF4-39CB-A49D1458C1F2}|ms-gestiontransferenciasaldo.csproj|c:\\users\\user\\glenn\\proyectosnet\\ms-gestiontransferenciasaldo\\ms-gestiontransferenciasaldo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DA58D04A-0FAC-5BF4-39CB-A49D1458C1F2}|ms-gestiontransferenciasaldo.csproj|solutionrelative:ms-gestiontransferenciasaldo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Interfaces\\IUserRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Interfaces\\IUserRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Interfaces\\IMovementRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Interfaces\\IMovementRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Interfaces\\IWalletRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Interfaces\\IWalletRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Enums\\MovementType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Enums\\MovementType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Entities\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Entities\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Entities\\Movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Entities\\Movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Entities\\Wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Entities\\Wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ms-gestiontransferenciasaldo.csproj",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\ms-gestiontransferenciasaldo.csproj",
+              "RelativeDocumentMoniker": "ms-gestiontransferenciasaldo.csproj",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\ms-gestiontransferenciasaldo.csproj",
+              "RelativeToolTip": "ms-gestiontransferenciasaldo.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-05T05:03:29.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T04:58:22.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IMovementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Interfaces\\IMovementRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IMovementRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Interfaces\\IMovementRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IMovementRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T04:57:31.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IWalletRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Interfaces\\IWalletRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IWalletRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Interfaces\\IWalletRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IWalletRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T04:57:09.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MovementType.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Enums\\MovementType.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\MovementType.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Enums\\MovementType.cs",
+              "RelativeToolTip": "Domain\\Enums\\MovementType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T04:54:32.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T04:54:08.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Movement.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Entities\\Movement.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Movement.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Entities\\Movement.cs",
+              "RelativeToolTip": "Domain\\Entities\\Movement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T04:53:17.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Wallet.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Entities\\Wallet.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Wallet.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\ms-gestiontransferenciasaldo\\Domain\\Entities\\Wallet.cs",
+              "RelativeToolTip": "Domain\\Entities\\Wallet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T04:51:44.136Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
