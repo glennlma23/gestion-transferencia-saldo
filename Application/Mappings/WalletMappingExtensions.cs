@@ -5,11 +5,11 @@ namespace Application.Mappings;
 
 public static class WalletMappingExtensions
 {
-    public static Wallet ToEntity(this CreateWalletRequest request)
+    public static Wallet ToEntity(this CreateWalletRequest request, string documentId)
     {
         return new Wallet
         {
-            DocumentId = request.DocumentId,
+            DocumentId = documentId,
             Name = request.Name,
             Balance = 0,
             CreatedAt = DateTime.UtcNow.AddHours(-5),

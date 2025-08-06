@@ -47,13 +47,6 @@
             </summary>
             <param name="request">Datos de la billetera a crear.</param>
         </member>
-        <member name="M:Api.GestionTransferenciaSaldo.Controllers.WalletController.Update(System.Int32,Application.DTOs.Wallet.UpdateWalletRequest)">
-            <summary>
-            Método para actualizar una billetera con un determinado Id.
-            </summary>
-            <param name="id">Identificador único de la billetera.</param>
-            <param name="request">Datos actualizados de la billetera.</param>
-        </member>
         <member name="M:Api.GestionTransferenciaSaldo.Controllers.WalletController.Delete(System.Int32)">
             <summary>
             Método para eliminar una billetera con un determinado Id.

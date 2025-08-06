@@ -8,6 +8,9 @@ C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\Api
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\Api.GestionTransferenciaSaldo.exe
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\testhost.exe
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\MvcTestingAppManifest.json
+C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\Api.IntegrationTests.deps.json
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\Api.IntegrationTests.runtimeconfig.json
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\Api.IntegrationTests.dll
@@ -303,6 +306,7 @@ C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\ref
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\FluentAssertions.dll
+C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Testing.dll
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\Microsoft.AspNetCore.TestHost.dll
@@ -458,12 +462,10 @@ C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\obj\Debug\net8.0\Api
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\obj\Debug\net8.0\Api.IntegrationTests.AssemblyInfoInputs.cache
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\obj\Debug\net8.0\Api.IntegrationTests.AssemblyInfo.cs
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\obj\Debug\net8.0\Api.IntegrationTests.csproj.CoreCompileInputs.cache
+C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\obj\Debug\net8.0\Api.IntegrationTests.sourcelink.json
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\obj\Debug\net8.0\Api.Inte.F79AFFBC.Up2Date
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\obj\Debug\net8.0\Api.IntegrationTests.dll
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\obj\Debug\net8.0\refint\Api.IntegrationTests.dll
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\obj\Debug\net8.0\Api.IntegrationTests.pdb
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\obj\Debug\net8.0\Api.IntegrationTests.genruntimeconfig.cache
 C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\obj\Debug\net8.0\ref\Api.IntegrationTests.dll
-C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
-C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
-C:\Users\USER\Glenn\ProyectosNET\Tests\Api.IntegrationTests\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll

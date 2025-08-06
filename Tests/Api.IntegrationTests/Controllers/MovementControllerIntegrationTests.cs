@@ -23,7 +23,6 @@ public class MovementControllerIntegrationTests : IClassFixture<WebApplicationFa
     [Fact]
     public async Task CreateMovement_ShouldReturnCreated()
     {
-        // Arrange: crear primero una billetera para asociarla al movimiento
         var walletRequest = new
         {
             DocumentId = "99999999",
@@ -56,7 +55,7 @@ public class MovementControllerIntegrationTests : IClassFixture<WebApplicationFa
     [Fact]
     public async Task GetByWalletId_ShouldReturnMovements()
     {
-        // Arrange: crear billetera y movimiento
+        // Arrange
         var walletRequest = new
         {
             DocumentId = "12345678",
@@ -93,7 +92,7 @@ public class MovementControllerIntegrationTests : IClassFixture<WebApplicationFa
         // Arrange
         var movementRequest = new CreateMovementRequest
         {
-            WalletId = 999999, // Wallet que no existe
+            WalletId = 999999,
             Amount = 100,
             Type = (int)MovementType.Credit
         };
@@ -110,7 +109,7 @@ public class MovementControllerIntegrationTests : IClassFixture<WebApplicationFa
     [Fact]
     public async Task CreateDebitMovement_WithInsufficientBalance_ShouldReturnBadRequest()
     {
-        // Arrange: primero creamos una billetera con saldo cero
+        // Arrange
         var walletRequest = new
         {
             DocumentId = "22222222",

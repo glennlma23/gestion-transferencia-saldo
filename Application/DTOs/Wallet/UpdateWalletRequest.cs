@@ -9,5 +9,6 @@ public class UpdateWalletRequest
     /// </summary>
     /// <example>Glenn Maura</example>
     [Required(ErrorMessage = "Name no puede ser vacío.")]
+    [RegularExpression("^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]+$", ErrorMessage = "Name solo debe contener letras, números y espacios.")]
     public string Name { get; set; } = null!;
 }

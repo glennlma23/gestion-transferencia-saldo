@@ -5,6 +5,10 @@ using Domain.Interfaces;
 using Infrastructure.Persistence;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,11 +19,11 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen(options =>
 {
-    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    options.SwaggerDoc("v1", new OpenApiInfo
     {
         Title = "API de Gestión de Transferencias de Saldo",
         Version = "v1",
-        Description = "API desarrollada para administrar billeteras digitales, incluyendo la creación, actualización, eliminación y consulta de saldos."
+        Description = "API desarrollada para administrar billeteras digitales..."
     });
 
     var apiXml = Path.Combine(AppContext.BaseDirectory, "Api.GestionTransferenciaSaldo.xml");
@@ -27,6 +31,31 @@ builder.Services.AddSwaggerGen(options =>
 
     var appXml = Path.Combine(AppContext.BaseDirectory, "Application.xml");
     options.IncludeXmlComments(appXml);
+
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Ingresa tu token JWT en este formato: **eyJhbGciOiJIUzI1NiIs...**"
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
 });
 
 // Configurar DbContext con SQL Server
@@ -44,7 +73,22 @@ builder.Services.AddScoped<IMovementRepository, MovementRepository>();
 
 builder.Services.AddScoped<IWalletService, WalletService>();
 builder.Services.AddScoped<IMovementService, MovementService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
+builder.Services.AddAuthentication("Bearer")
+    .AddJwtBearer("Bearer", options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
+        };
+    });
 
 var app = builder.Build();
 
@@ -60,6 +104,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseExceptionMiddleware();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

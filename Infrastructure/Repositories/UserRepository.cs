@@ -18,10 +18,21 @@ public class UserRepository : IUserRepository
     {
         return await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
     }
+    public async Task<User?> GetByDocumentIdAsync(string documentId)
+    {
+        return await _context.Users.FirstOrDefaultAsync(u => u.DocumentId == documentId);
+    }
 
     public async Task AddAsync(User user)
     {
         await _context.Users.AddAsync(user);
         await _context.SaveChangesAsync();
+    }
+
+    public async Task<User> RegisterAsync(User user)
+    {
+        await _context.Users.AddAsync(user);
+        await _context.SaveChangesAsync();
+        return user;
     }
 }

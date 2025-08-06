@@ -298,6 +298,7 @@ C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\bin\Debug\net8.0\
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\bin\Debug\net8.0\Humanizer.dll
+C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\bin\Debug\net8.0\Microsoft.Build.Locator.dll
@@ -451,6 +452,7 @@ C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\Api.GestionTransferenciaSaldo.csproj.CoreCompileInputs.cache
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\Api.GestionTransferenciaSaldo.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\Api.GestionTransferenciaSaldo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\Api.GestionTransferenciaSaldo.sourcelink.json
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

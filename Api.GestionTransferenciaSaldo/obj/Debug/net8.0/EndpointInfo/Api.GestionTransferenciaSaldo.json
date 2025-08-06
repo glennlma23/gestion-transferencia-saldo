@@ -2,10 +2,111 @@
   "openapi": "3.0.1",
   "info": {
     "title": "API de Gestión de Transferencias de Saldo",
-    "description": "API desarrollada para administrar billeteras digitales, incluyendo la creación, actualización, eliminación y consulta de saldos.",
+    "description": "API desarrollada para administrar billeteras digitales...",
     "version": "v1"
   },
   "paths": {
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Método para iniciar sesión y obtener token de autorización.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Auth/register": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Método para registrar un nuevo usuario.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
+    },
     "/api/Movement/wallet/{walletId}": {
       "get": {
         "tags": [
@@ -123,6 +224,29 @@
                 }
               }
             }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -436,6 +560,29 @@
                 }
               }
             }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -479,6 +626,29 @@
                 }
               }
             }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -520,24 +690,51 @@
       },
       "CreateWalletRequest": {
         "required": [
-          "documentId",
           "name"
         ],
         "type": "object",
         "properties": {
-          "documentId": {
-            "minLength": 1,
-            "pattern": "^[a-zA-Z0-9]+$",
-            "type": "string",
-            "description": "Documento de identidad de la persona propietaria de la billetera.",
-            "example": "72319090"
-          },
           "name": {
             "minLength": 1,
             "pattern": "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]+$",
             "type": "string",
             "description": "Nombre del propietario de la billetera.",
             "example": "Glenn Maura"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginRequest": {
+        "required": [
+          "password",
+          "username"
+        ],
+        "type": "object",
+        "properties": {
+          "username": {
+            "minLength": 1,
+            "pattern": "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]+$",
+            "type": "string",
+            "description": "Nombre de usuario registrado.",
+            "example": "glennlma23"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string",
+            "description": "Contraseña de usuario registrado.",
+            "example": "j3jkt9jn0nnfb1"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginResponse": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "description": "Token Jwt para autorización.",
+            "nullable": true,
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6"
           }
         },
         "additionalProperties": false
@@ -605,6 +802,36 @@
         },
         "additionalProperties": { }
       },
+      "RegisterRequest": {
+        "required": [
+          "documentId",
+          "password",
+          "username"
+        ],
+        "type": "object",
+        "properties": {
+          "username": {
+            "minLength": 1,
+            "type": "string",
+            "description": "Contraseña de usuario registrado.",
+            "example": "Glenn Maura"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string",
+            "description": "Contraseña de usuario registrado.",
+            "example": "j3jkt9jn0nnfb1"
+          },
+          "documentId": {
+            "minLength": 1,
+            "pattern": "^[a-zA-Z0-9]+$",
+            "type": "string",
+            "description": "Documento de identidad de usuario a registrarse.",
+            "example": "72319090"
+          }
+        },
+        "additionalProperties": false
+      },
       "UpdateWalletRequest": {
         "required": [
           "name"
@@ -613,6 +840,7 @@
         "properties": {
           "name": {
             "minLength": 1,
+            "pattern": "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]+$",
             "type": "string",
             "description": "Nombre del propietario de la billetera.",
             "example": "Glenn Maura"
@@ -662,6 +890,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Ingresa tu token JWT en este formato: **eyJhbGciOiJIUzI1NiIs...**",
+        "scheme": "Bearer",
+        "bearerFormat": "JWT"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

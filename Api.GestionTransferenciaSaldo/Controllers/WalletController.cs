@@ -1,6 +1,7 @@
 using Application.DTOs.Wallet;
 using Application.Interfaces;
 using Application.Mappings;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.GestionTransferenciaSaldo.Controllers;
@@ -60,13 +61,19 @@ public class WalletController : ControllerBase
     /// Método para registrar una nueva billetera.
     /// </summary>
     /// <param name="request">Datos de la billetera a crear.</param>
+    [Authorize]
     [HttpPost]
     [ProducesResponseType(typeof(WalletResponse), StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<WalletResponse>> Create([FromBody] CreateWalletRequest request)
     {
-        var wallet = request.ToEntity();
+        var documentId = User.FindFirst("DocumentId")?.Value;
+        if (string.IsNullOrEmpty(documentId))
+            return Unauthorized("Token inválido.");;
+
+        var wallet = request.ToEntity(documentId);
         var created = await _walletService.CreateAsync(wallet);
+
         return CreatedAtAction(nameof(GetByIdAndDocumentId),
             new { id = created.Id, documentId = created.DocumentId },
             created.ToResponse());
@@ -77,15 +84,23 @@ public class WalletController : ControllerBase
     /// </summary>
     /// <param name="id">Identificador único de la billetera.</param>
     /// <param name="request">Datos actualizados de la billetera.</param>
+    [Authorize]
     [HttpPut("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status403Forbidden)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> Update(int id, [FromBody] UpdateWalletRequest request)
     {
         var existing = await _walletService.GetByIdAsync(id);
         if (existing is null)
             return NotFound();
+
+        var userDocumentId = User.FindFirst("documentId")?.Value;
+
+        if (userDocumentId == null || userDocumentId != existing.DocumentId)
+            return Forbid("No tienes permisos para modificar esta billetera.");
 
         existing.UpdateFromRequest(request);
         await _walletService.UpdateAsync(existing);
@@ -97,14 +112,22 @@ public class WalletController : ControllerBase
     /// Método para eliminar una billetera con un determinado Id.
     /// </summary>
     /// <param name="id">Identificador único de la billetera.</param>
+    [Authorize]
     [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status403Forbidden)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> Delete(int id)
     {
         var existing = await _walletService.GetByIdAsync(id);
         if (existing is null)
             return NotFound();
+
+        var userDocumentId = User.FindFirst("documentId")?.Value;
+
+        if (userDocumentId == null || userDocumentId != existing.DocumentId)
+            return Forbid("No tienes permisos para eliminar esta billetera.");
 
         await _walletService.DeleteAsync(id);
         return NoContent();

@@ -2,6 +2,7 @@
 using Application.Mappings;
 using Domain.Entities;
 using FluentAssertions;
+using System.Reflection.Metadata;
 
 namespace Application.Tests.Mappings;
 
@@ -13,12 +14,12 @@ public class WalletMappingExtensionsTests
         // Arrange
         var request = new CreateWalletRequest
         {
-            DocumentId = "12345678",
             Name = "Glenn Maura"
         };
 
+        string documentId = "12345678";
         // Act
-        var wallet = request.ToEntity();
+        var wallet = request.ToEntity(documentId);
 
         // Assert
         wallet.DocumentId.Should().Be("12345678");

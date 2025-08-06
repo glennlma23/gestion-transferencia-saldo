@@ -52,9 +52,39 @@
             </summary>
             <example>05/08/2025 11:11:11</example>
         </member>
-        <member name="P:Application.DTOs.Wallet.CreateWalletRequest.DocumentId">
+        <member name="P:Application.DTOs.User.LoginRequest.Username">
             <summary>
-            Documento de identidad de la persona propietaria de la billetera.
+            Nombre de usuario registrado.
+            </summary>
+            <example>glennlma23</example>
+        </member>
+        <member name="P:Application.DTOs.User.LoginRequest.Password">
+            <summary>
+            Contraseña de usuario registrado.
+            </summary>
+            <example>j3jkt9jn0nnfb1</example>
+        </member>
+        <member name="P:Application.DTOs.User.LoginResponse.Token">
+            <summary>
+            Token Jwt para autorización.
+            </summary>
+            <example>eyJhbGciOiJIUzI1NiIsInR5cCI6</example>
+        </member>
+        <member name="P:Application.DTOs.User.RegisterRequest.Username">
+            <summary>
+            Contraseña de usuario registrado.
+            </summary>
+            <example>Glenn Maura</example>
+        </member>
+        <member name="P:Application.DTOs.User.RegisterRequest.Password">
+            <summary>
+            Contraseña de usuario registrado.
+            </summary>
+            <example>j3jkt9jn0nnfb1</example>
+        </member>
+        <member name="P:Application.DTOs.User.RegisterRequest.DocumentId">
+            <summary>
+            Documento de identidad de usuario a registrarse.
             </summary>
             <example>72319090</example>
         </member>

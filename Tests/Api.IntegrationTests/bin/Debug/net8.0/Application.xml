@@ -52,12 +52,6 @@
             </summary>
             <example>05/08/2025 11:11:11</example>
         </member>
-        <member name="P:Application.DTOs.Wallet.CreateWalletRequest.DocumentId">
-            <summary>
-            Documento de identidad de la persona propietaria de la billetera.
-            </summary>
-            <example>72319090</example>
-        </member>
         <member name="P:Application.DTOs.Wallet.CreateWalletRequest.Name">
             <summary>
             Nombre del propietario de la billetera.

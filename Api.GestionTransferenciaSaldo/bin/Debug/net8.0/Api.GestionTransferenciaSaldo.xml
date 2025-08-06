@@ -4,6 +4,16 @@
         <name>Api.GestionTransferenciaSaldo</name>
     </assembly>
     <members>
+        <member name="M:AuthController.Login(Application.DTOs.User.LoginRequest)">
+            <summary>
+            Método para iniciar sesión y obtener token de autorización.
+            </summary>
+        </member>
+        <member name="M:AuthController.Register(Application.DTOs.User.RegisterRequest)">
+            <summary>
+            Método para registrar un nuevo usuario.
+            </summary>
+        </member>
         <member name="T:Api.GestionTransferenciaSaldo.Controllers.MovementController">
             <summary>
             API para gestionar movimientos de billeteras.

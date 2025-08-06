@@ -83,8 +83,9 @@ namespace Api.GestionTransferenciaSaldo.Tests.Controllers
         [Fact]
         public async Task Create_ShouldReturnCreatedAtAction()
         {
-            var request = new CreateWalletRequest { DocumentId = "123", Name = "New User" };
-            var wallet = request.ToEntity();
+            var request = new CreateWalletRequest { Name = "New User" };
+            string documentId = "123";
+            var wallet = request.ToEntity(documentId);
             wallet.Id = 1;
 
             _walletServiceMock.Setup(s => s.CreateAsync(It.IsAny<Wallet>())).ReturnsAsync(wallet);

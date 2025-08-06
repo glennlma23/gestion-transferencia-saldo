@@ -1,9 +1,10 @@
 ﻿using Api.GestionTransferenciaSaldo;
+using Application.DTOs.User;
 using Application.DTOs.Wallet;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
 using System.Net;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using Xunit;
 
@@ -18,6 +19,25 @@ public class WalletControllerIntegrationTests : IClassFixture<WebApplicationFact
         _client = factory.CreateClient();
     }
 
+    private async Task<string> AuthenticateAsync(string username, string password, string documentId)
+    {
+        await _client.PostAsJsonAsync("/api/user/register", new RegisterRequest
+        {
+            Username = username,
+            Password = password,
+            DocumentId = documentId
+        });
+
+        var loginResponse = await _client.PostAsJsonAsync("/api/auth/login", new LoginRequest
+        {
+            Username = username,
+            Password = password
+        });
+
+        var result = await loginResponse.Content.ReadFromJsonAsync<LoginResponse>();
+        return result!.Token;
+    }
+
     [Fact]
     public async Task GetAll_ShouldReturnOk()
     {
@@ -28,9 +48,13 @@ public class WalletControllerIntegrationTests : IClassFixture<WebApplicationFact
     [Fact]
     public async Task Create_ShouldReturnCreated()
     {
+        var documentId = Guid.NewGuid().ToString().Substring(0, 8);
+        var token = await AuthenticateAsync("user1", "pass1", documentId);
+
+        _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
         var request = new CreateWalletRequest
         {
-            DocumentId = Guid.NewGuid().ToString().Substring(0, 8),
             Name = "Test User"
         };
 
@@ -40,19 +64,20 @@ public class WalletControllerIntegrationTests : IClassFixture<WebApplicationFact
 
         var result = await response.Content.ReadFromJsonAsync<WalletResponse>();
         result.Should().NotBeNull();
-        result!.DocumentId.Should().Be(request.DocumentId);
-        result.Name.Should().Be(request.Name);
+        result!.Name.Should().Be(request.Name);
+        result.DocumentId.Should().Be(documentId);
     }
 
     [Fact]
     public async Task GetByDocumentId_ShouldReturnOk()
     {
         var documentId = Guid.NewGuid().ToString().Substring(0, 8);
+        var token = await AuthenticateAsync("user2", "pass2", documentId);
 
-        // Crear primero
+        _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
         await _client.PostAsJsonAsync("/api/wallet", new CreateWalletRequest
         {
-            DocumentId = documentId,
             Name = "User To Search"
         });
 
@@ -65,9 +90,12 @@ public class WalletControllerIntegrationTests : IClassFixture<WebApplicationFact
     public async Task Update_ShouldReturnNoContent()
     {
         var documentId = Guid.NewGuid().ToString().Substring(0, 8);
+        var token = await AuthenticateAsync("user3", "pass3", documentId);
+
+        _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
         var createResponse = await _client.PostAsJsonAsync("/api/wallet", new CreateWalletRequest
         {
-            DocumentId = documentId,
             Name = "User Before"
         });
 
@@ -87,9 +115,12 @@ public class WalletControllerIntegrationTests : IClassFixture<WebApplicationFact
     public async Task Delete_ShouldReturnNoContent()
     {
         var documentId = Guid.NewGuid().ToString().Substring(0, 8);
+        var token = await AuthenticateAsync("user4", "pass4", documentId);
+
+        _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
         var createResponse = await _client.PostAsJsonAsync("/api/wallet", new CreateWalletRequest
         {
-            DocumentId = documentId,
             Name = "User To Delete"
         });
 
