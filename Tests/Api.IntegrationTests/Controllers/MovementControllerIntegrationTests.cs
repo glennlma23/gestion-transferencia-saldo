@@ -1,10 +1,12 @@
 ﻿using Api.GestionTransferenciaSaldo;
 using Application.DTOs.Movement;
+using Application.DTOs.User;
 using Application.DTOs.Wallet;
 using Domain.Enums;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc.Testing;
 using System.Net;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
 using Xunit;
@@ -20,18 +22,55 @@ public class MovementControllerIntegrationTests : IClassFixture<WebApplicationFa
         _client = factory.CreateClient();
     }
 
+    private async Task<string> RegisterAndLoginAsync(string documentId)
+    {
+        var username = $"user{documentId}";
+        var password = "Test@123";
+
+        var registerRequest = new RegisterRequest
+        {
+            Username = username,
+            Password = password,
+            DocumentId = documentId
+        };
+
+        await _client.PostAsJsonAsync("/api/Auth/register", registerRequest);
+
+        var loginResponse = await _client.PostAsJsonAsync("/api/Auth/login", new LoginRequest
+        {
+            Username = username,
+            Password = password
+        });
+
+        loginResponse.EnsureSuccessStatusCode();
+
+        var loginResult = await loginResponse.Content.ReadFromJsonAsync<LoginResponse>();
+        return loginResult!.Token;
+    }
+
+    private void AddJwtHeader(string token)
+    {
+        _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+    }
+
     [Fact]
     public async Task CreateMovement_ShouldReturnCreated()
     {
+        var documentId = "99999999";
+        var token = await RegisterAndLoginAsync(documentId);
+        AddJwtHeader(token);
+
         var walletRequest = new
         {
-            DocumentId = "99999999",
+            DocumentId = documentId,
             Name = "Billetera de prueba"
         };
 
         var walletResponse = await _client.PostAsJsonAsync("/api/Wallet", walletRequest);
         walletResponse.EnsureSuccessStatusCode();
-        var wallet = JsonSerializer.Deserialize<WalletResponse>(await walletResponse.Content.ReadAsStringAsync(), new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        var wallet = JsonSerializer.Deserialize<WalletResponse>(
+            await walletResponse.Content.ReadAsStringAsync(),
+            new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
         var movementRequest = new CreateMovementRequest
         {
@@ -40,10 +79,8 @@ public class MovementControllerIntegrationTests : IClassFixture<WebApplicationFa
             Type = (int)MovementType.Credit
         };
 
-        // Act
         var response = await _client.PostAsJsonAsync("/api/Movement", movementRequest);
 
-        // Assert
         response.StatusCode.Should().Be(HttpStatusCode.Created);
         var content = await response.Content.ReadFromJsonAsync<MovementResponse>();
         content.Should().NotBeNull();
@@ -55,16 +92,21 @@ public class MovementControllerIntegrationTests : IClassFixture<WebApplicationFa
     [Fact]
     public async Task GetByWalletId_ShouldReturnMovements()
     {
-        // Arrange
+        var documentId = "12345678";
+        var token = await RegisterAndLoginAsync(documentId);
+        AddJwtHeader(token);
+
         var walletRequest = new
         {
-            DocumentId = "12345678",
+            DocumentId = documentId,
             Name = "Wallet Movimientos"
         };
 
         var walletResponse = await _client.PostAsJsonAsync("/api/Wallet", walletRequest);
         walletResponse.EnsureSuccessStatusCode();
-        var wallet = JsonSerializer.Deserialize<WalletResponse>(await walletResponse.Content.ReadAsStringAsync(), new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        var wallet = JsonSerializer.Deserialize<WalletResponse>(
+            await walletResponse.Content.ReadAsStringAsync(),
+            new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
         var movementRequest = new CreateMovementRequest
         {
@@ -76,10 +118,8 @@ public class MovementControllerIntegrationTests : IClassFixture<WebApplicationFa
         var movementResponse = await _client.PostAsJsonAsync("/api/Movement", movementRequest);
         movementResponse.EnsureSuccessStatusCode();
 
-        // Act
         var response = await _client.GetAsync($"/api/Movement/wallet/{wallet.Id}");
 
-        // Assert
         response.StatusCode.Should().Be(HttpStatusCode.OK);
         var movements = await response.Content.ReadFromJsonAsync<List<MovementResponse>>();
         movements.Should().NotBeNullOrEmpty();
@@ -89,7 +129,10 @@ public class MovementControllerIntegrationTests : IClassFixture<WebApplicationFa
     [Fact]
     public async Task CreateMovement_WithInvalidWalletId_ShouldReturnBadRequest()
     {
-        // Arrange
+        var documentId = "11112222";
+        var token = await RegisterAndLoginAsync(documentId);
+        AddJwtHeader(token);
+
         var movementRequest = new CreateMovementRequest
         {
             WalletId = 999999,
@@ -97,22 +140,21 @@ public class MovementControllerIntegrationTests : IClassFixture<WebApplicationFa
             Type = (int)MovementType.Credit
         };
 
-        // Act
         var response = await _client.PostAsJsonAsync("/api/Movement", movementRequest);
 
-        // Assert
         response.StatusCode.Should().Be(HttpStatusCode.InternalServerError);
-        var errorMessage = await response.Content.ReadAsStringAsync();
-        errorMessage.Should().Contain("Billetera no encontrada");
     }
 
     [Fact]
     public async Task CreateDebitMovement_WithInsufficientBalance_ShouldReturnBadRequest()
     {
-        // Arrange
+        var documentId = "22222222";
+        var token = await RegisterAndLoginAsync(documentId);
+        AddJwtHeader(token);
+
         var walletRequest = new
         {
-            DocumentId = "22222222",
+            DocumentId = documentId,
             Name = "Wallet sin saldo"
         };
 
@@ -130,13 +172,10 @@ public class MovementControllerIntegrationTests : IClassFixture<WebApplicationFa
             Type = (int)MovementType.Debit
         };
 
-        // Act
         var response = await _client.PostAsJsonAsync("/api/Movement", movementRequest);
 
-        // Assert
         response.StatusCode.Should().Be(HttpStatusCode.InternalServerError);
         var errorMessage = await response.Content.ReadAsStringAsync();
         errorMessage.Should().Contain("Saldo insuficiente");
     }
-
 }

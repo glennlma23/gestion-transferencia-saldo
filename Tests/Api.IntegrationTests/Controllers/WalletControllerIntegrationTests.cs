@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using System.Net;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
+using System.Text.Json;
 using Xunit;
 
 namespace Api.IntegrationTests.Controllers;
@@ -21,7 +22,7 @@ public class WalletControllerIntegrationTests : IClassFixture<WebApplicationFact
 
     private async Task<string> AuthenticateAsync(string username, string password, string documentId)
     {
-        await _client.PostAsJsonAsync("/api/user/register", new RegisterRequest
+        await _client.PostAsJsonAsync("/api/auth/register", new RegisterRequest
         {
             Username = username,
             Password = password,
@@ -34,6 +35,7 @@ public class WalletControllerIntegrationTests : IClassFixture<WebApplicationFact
             Password = password
         });
 
+        loginResponse.EnsureSuccessStatusCode();
         var result = await loginResponse.Content.ReadFromJsonAsync<LoginResponse>();
         return result!.Token;
     }
@@ -59,7 +61,6 @@ public class WalletControllerIntegrationTests : IClassFixture<WebApplicationFact
         };
 
         var response = await _client.PostAsJsonAsync("/api/wallet", request);
-
         response.StatusCode.Should().Be(HttpStatusCode.Created);
 
         var result = await response.Content.ReadFromJsonAsync<WalletResponse>();
@@ -82,7 +83,6 @@ public class WalletControllerIntegrationTests : IClassFixture<WebApplicationFact
         });
 
         var response = await _client.GetAsync($"/api/wallet/document/{documentId}");
-
         response.StatusCode.Should().Be(HttpStatusCode.OK);
     }
 
@@ -107,7 +107,6 @@ public class WalletControllerIntegrationTests : IClassFixture<WebApplicationFact
         };
 
         var response = await _client.PutAsJsonAsync($"/api/wallet/{wallet!.Id}", updateRequest);
-
         response.StatusCode.Should().Be(HttpStatusCode.NoContent);
     }
 
@@ -127,7 +126,6 @@ public class WalletControllerIntegrationTests : IClassFixture<WebApplicationFact
         var wallet = await createResponse.Content.ReadFromJsonAsync<WalletResponse>();
 
         var response = await _client.DeleteAsync($"/api/wallet/{wallet!.Id}");
-
         response.StatusCode.Should().Be(HttpStatusCode.NoContent);
     }
 }

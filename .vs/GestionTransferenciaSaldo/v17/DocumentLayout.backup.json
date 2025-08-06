@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Glenn\\ProyectosNET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F86FC082-F1B6-465C-BB70-4434818D5B02}|Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj|c:\\users\\user\\glenn\\proyectosnet\\api.gestiontransferenciasaldo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F86FC082-F1B6-465C-BB70-4434818D5B02}|Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj|solutionrelative:api.gestiontransferenciasaldo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7431A40-A8B0-428E-83F9-351290D4A5B1}|Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj|c:\\users\\user\\glenn\\proyectosnet\\tests\\api.integrationtests\\controllers\\walletcontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7431A40-A8B0-428E-83F9-351290D4A5B1}|Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj|solutionrelative:tests\\api.integrationtests\\controllers\\walletcontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7431A40-A8B0-428E-83F9-351290D4A5B1}|Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj|c:\\users\\user\\glenn\\proyectosnet\\tests\\api.integrationtests\\controllers\\movementcontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7431A40-A8B0-428E-83F9-351290D4A5B1}|Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj|solutionrelative:tests\\api.integrationtests\\controllers\\movementcontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F356C8-9EC2-4A47-A4E0-B2887352B995}|Tests\\Api.GestionTransferenciaSaldo.Tests\\Api.GestionTransferenciaSaldo.Tests.csproj|c:\\users\\user\\glenn\\proyectosnet\\tests\\api.gestiontransferenciasaldo.tests\\controllers\\movementcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F356C8-9EC2-4A47-A4E0-B2887352B995}|Tests\\Api.GestionTransferenciaSaldo.Tests\\Api.GestionTransferenciaSaldo.Tests.csproj|solutionrelative:tests\\api.gestiontransferenciasaldo.tests\\controllers\\movementcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F356C8-9EC2-4A47-A4E0-B2887352B995}|Tests\\Api.GestionTransferenciaSaldo.Tests\\Api.GestionTransferenciaSaldo.Tests.csproj|c:\\users\\user\\glenn\\proyectosnet\\tests\\api.gestiontransferenciasaldo.tests\\api.gestiontransferenciasaldo.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{25F356C8-9EC2-4A47-A4E0-B2887352B995}|Tests\\Api.GestionTransferenciaSaldo.Tests\\Api.GestionTransferenciaSaldo.Tests.csproj|solutionrelative:tests\\api.gestiontransferenciasaldo.tests\\api.gestiontransferenciasaldo.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F86FC082-F1B6-465C-BB70-4434818D5B02}|Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj|c:\\users\\user\\glenn\\proyectosnet\\api.gestiontransferenciasaldo\\controllers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +25,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{F86FC082-F1B6-465C-BB70-4434818D5B02}|Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj|c:\\users\\user\\glenn\\proyectosnet\\api.gestiontransferenciasaldo\\controllers\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F86FC082-F1B6-465C-BB70-4434818D5B02}|Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj|solutionrelative:api.gestiontransferenciasaldo\\controllers\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7431A40-A8B0-428E-83F9-351290D4A5B1}|Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj|c:\\users\\user\\glenn\\proyectosnet\\tests\\api.integrationtests\\api.integrationtests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E7431A40-A8B0-428E-83F9-351290D4A5B1}|Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj|solutionrelative:tests\\api.integrationtests\\api.integrationtests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED44AD05-E8ED-42BF-8756-CFEC1BCA3D85}|Domain\\Domain.csproj|c:\\users\\user\\glenn\\proyectosnet\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ED44AD05-E8ED-42BF-8756-CFEC1BCA3D85}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86FC082-F1B6-465C-BB70-4434818D5B02}|Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj|c:\\users\\user\\glenn\\proyectosnet\\api.gestiontransferenciasaldo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86FC082-F1B6-465C-BB70-4434818D5B02}|Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj|solutionrelative:api.gestiontransferenciasaldo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60098F6B-391A-4C65-BB7B-1A9F72296CAF}|Application\\Application.csproj|c:\\users\\user\\glenn\\proyectosnet\\application\\dtos\\wallet\\updatewalletrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,40 +63,12 @@
       "RelativeMoniker": "D:0:0:{60098F6B-391A-4C65-BB7B-1A9F72296CAF}|Application\\Application.csproj|solutionrelative:application\\dtos\\wallet\\walletresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25F356C8-9EC2-4A47-A4E0-B2887352B995}|Tests\\Api.GestionTransferenciaSaldo.Tests\\Api.GestionTransferenciaSaldo.Tests.csproj|c:\\users\\user\\glenn\\proyectosnet\\tests\\api.gestiontransferenciasaldo.tests\\controllers\\movementcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25F356C8-9EC2-4A47-A4E0-B2887352B995}|Tests\\Api.GestionTransferenciaSaldo.Tests\\Api.GestionTransferenciaSaldo.Tests.csproj|solutionrelative:tests\\api.gestiontransferenciasaldo.tests\\controllers\\movementcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7431A40-A8B0-428E-83F9-351290D4A5B1}|Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj|c:\\users\\user\\glenn\\proyectosnet\\tests\\api.integrationtests\\controllers\\movementcontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7431A40-A8B0-428E-83F9-351290D4A5B1}|Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj|solutionrelative:tests\\api.integrationtests\\controllers\\movementcontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7431A40-A8B0-428E-83F9-351290D4A5B1}|Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj|c:\\users\\user\\glenn\\proyectosnet\\tests\\api.integrationtests\\controllers\\walletcontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7431A40-A8B0-428E-83F9-351290D4A5B1}|Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj|solutionrelative:tests\\api.integrationtests\\controllers\\walletcontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25F356C8-9EC2-4A47-A4E0-B2887352B995}|Tests\\Api.GestionTransferenciaSaldo.Tests\\Api.GestionTransferenciaSaldo.Tests.csproj|c:\\users\\user\\glenn\\proyectosnet\\tests\\api.gestiontransferenciasaldo.tests\\api.gestiontransferenciasaldo.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{25F356C8-9EC2-4A47-A4E0-B2887352B995}|Tests\\Api.GestionTransferenciaSaldo.Tests\\Api.GestionTransferenciaSaldo.Tests.csproj|solutionrelative:tests\\api.gestiontransferenciasaldo.tests\\api.gestiontransferenciasaldo.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25F356C8-9EC2-4A47-A4E0-B2887352B995}|Tests\\Api.GestionTransferenciaSaldo.Tests\\Api.GestionTransferenciaSaldo.Tests.csproj|c:\\users\\user\\glenn\\proyectosnet\\tests\\api.gestiontransferenciasaldo.tests\\controllers\\walletcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25F356C8-9EC2-4A47-A4E0-B2887352B995}|Tests\\Api.GestionTransferenciaSaldo.Tests\\Api.GestionTransferenciaSaldo.Tests.csproj|solutionrelative:tests\\api.gestiontransferenciasaldo.tests\\controllers\\walletcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7431A40-A8B0-428E-83F9-351290D4A5B1}|Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj|c:\\users\\user\\glenn\\proyectosnet\\tests\\api.integrationtests\\api.integrationtests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E7431A40-A8B0-428E-83F9-351290D4A5B1}|Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj|solutionrelative:tests\\api.integrationtests\\api.integrationtests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{06F50F57-CE9A-41E1-865C-55F36857E772}|Tests\\Application.Tests\\Application.Tests.csproj|c:\\users\\user\\glenn\\proyectosnet\\tests\\application.tests\\mappings\\walletmappingextensionstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06F50F57-CE9A-41E1-865C-55F36857E772}|Tests\\Application.Tests\\Application.Tests.csproj|solutionrelative:tests\\application.tests\\mappings\\walletmappingextensionstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{06F50F57-CE9A-41E1-865C-55F36857E772}|Tests\\Application.Tests\\Application.Tests.csproj|c:\\users\\user\\glenn\\proyectosnet\\tests\\application.tests\\application.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{06F50F57-CE9A-41E1-865C-55F36857E772}|Tests\\Application.Tests\\Application.Tests.csproj|solutionrelative:tests\\application.tests\\application.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F86FC082-F1B6-465C-BB70-4434818D5B02}|Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj|c:\\users\\user\\glenn\\proyectosnet\\api.gestiontransferenciasaldo\\api.gestiontransferenciasaldo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F86FC082-F1B6-465C-BB70-4434818D5B02}|Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj|solutionrelative:api.gestiontransferenciasaldo\\api.gestiontransferenciasaldo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60098F6B-391A-4C65-BB7B-1A9F72296CAF}|Application\\Application.csproj|c:\\users\\user\\glenn\\proyectosnet\\application\\mappings\\walletmappingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -141,10 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|C:\\Users\\USER\\Glenn\\ProyectosNET\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|C:\\Users\\USER\\Glenn\\ProyectosNET\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60098F6B-391A-4C65-BB7B-1A9F72296CAF}|Application\\Application.csproj|c:\\users\\user\\glenn\\proyectosnet\\application\\mappings\\movementmappingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -236,10 +228,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ED44AD05-E8ED-42BF-8756-CFEC1BCA3D85}|Domain\\Domain.csproj|c:\\users\\user\\glenn\\proyectosnet\\domain\\entities\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED44AD05-E8ED-42BF-8756-CFEC1BCA3D85}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED44AD05-E8ED-42BF-8756-CFEC1BCA3D85}|Domain\\Domain.csproj|c:\\users\\user\\glenn\\proyectosnet\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{ED44AD05-E8ED-42BF-8756-CFEC1BCA3D85}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -249,128 +237,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateWalletRequest.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Wallet\\UpdateWalletRequest.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Wallet\\UpdateWalletRequest.cs",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Wallet\\UpdateWalletRequest.cs",
-              "RelativeToolTip": "Application\\DTOs\\Wallet\\UpdateWalletRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T07:35:22.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginResponse.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\User\\LoginResponse.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\User\\LoginResponse.cs",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\User\\LoginResponse.cs",
-              "RelativeToolTip": "Application\\DTOs\\User\\LoginResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T21:33:26.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginRequest.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\User\\LoginRequest.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\User\\LoginRequest.cs",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\User\\LoginRequest.cs",
-              "RelativeToolTip": "Application\\DTOs\\User\\LoginRequest.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T21:33:01.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MovementController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Controllers\\MovementController.cs",
-              "RelativeDocumentMoniker": "Api.GestionTransferenciaSaldo\\Controllers\\MovementController.cs",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Controllers\\MovementController.cs",
-              "RelativeToolTip": "Api.GestionTransferenciaSaldo\\Controllers\\MovementController.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAmwDQAAAAAAAAAAAAAAA==",
+              "Title": "MovementControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.GestionTransferenciaSaldo.Tests\\Controllers\\MovementControllerTests.cs",
+              "RelativeDocumentMoniker": "Tests\\Api.GestionTransferenciaSaldo.Tests\\Controllers\\MovementControllerTests.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.GestionTransferenciaSaldo.Tests\\Controllers\\MovementControllerTests.cs",
+              "RelativeToolTip": "Tests\\Api.GestionTransferenciaSaldo.Tests\\Controllers\\MovementControllerTests.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAD4v5gAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T16:01:38.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T19:10:14.968Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WalletController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Controllers\\WalletController.cs",
-              "RelativeDocumentMoniker": "Api.GestionTransferenciaSaldo\\Controllers\\WalletController.cs",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Controllers\\WalletController.cs",
-              "RelativeToolTip": "Api.GestionTransferenciaSaldo\\Controllers\\WalletController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T07:46:42.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Api.GestionTransferenciaSaldo\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Api.GestionTransferenciaSaldo\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T21:36:18.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "WalletResponse.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Wallet\\WalletResponse.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Wallet\\WalletResponse.cs",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Wallet\\WalletResponse.cs",
-              "RelativeToolTip": "Application\\DTOs\\Wallet\\WalletResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T07:34:40.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegisterRequest.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\User\\RegisterRequest.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\User\\RegisterRequest.cs",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\User\\RegisterRequest.cs",
-              "RelativeToolTip": "Application\\DTOs\\User\\RegisterRequest.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T21:54:02.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateWalletRequest.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Wallet\\CreateWalletRequest.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Wallet\\CreateWalletRequest.cs",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Wallet\\CreateWalletRequest.cs",
-              "RelativeToolTip": "Application\\DTOs\\Wallet\\CreateWalletRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAB8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T07:35:01.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "Api.GestionTransferenciaSaldo.Tests.csproj",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.GestionTransferenciaSaldo.Tests\\Api.GestionTransferenciaSaldo.Tests.csproj",
               "RelativeDocumentMoniker": "Tests\\Api.GestionTransferenciaSaldo.Tests\\Api.GestionTransferenciaSaldo.Tests.csproj",
@@ -378,73 +261,164 @@
               "RelativeToolTip": "Tests\\Api.GestionTransferenciaSaldo.Tests\\Api.GestionTransferenciaSaldo.Tests.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-05T19:06:51.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T19:06:51.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MovementControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.GestionTransferenciaSaldo.Tests\\Controllers\\MovementControllerTests.cs",
-              "RelativeDocumentMoniker": "Tests\\Api.GestionTransferenciaSaldo.Tests\\Controllers\\MovementControllerTests.cs",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.GestionTransferenciaSaldo.Tests\\Controllers\\MovementControllerTests.cs",
-              "RelativeToolTip": "Tests\\Api.GestionTransferenciaSaldo.Tests\\Controllers\\MovementControllerTests.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAuwCQAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MovementControllerIntegrationTests.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.IntegrationTests\\Controllers\\MovementControllerIntegrationTests.cs",
+              "RelativeDocumentMoniker": "Tests\\Api.IntegrationTests\\Controllers\\MovementControllerIntegrationTests.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.IntegrationTests\\Controllers\\MovementControllerIntegrationTests.cs",
+              "RelativeToolTip": "Tests\\Api.IntegrationTests\\Controllers\\MovementControllerIntegrationTests.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAD4v5AAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T19:10:14.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T21:16:10.157Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "WalletControllerIntegrationTests.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.IntegrationTests\\Controllers\\WalletControllerIntegrationTests.cs",
               "RelativeDocumentMoniker": "Tests\\Api.IntegrationTests\\Controllers\\WalletControllerIntegrationTests.cs",
               "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.IntegrationTests\\Controllers\\WalletControllerIntegrationTests.cs",
               "RelativeToolTip": "Tests\\Api.IntegrationTests\\Controllers\\WalletControllerIntegrationTests.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAgwDsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAAAIMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T19:20:36.162Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MovementControllerIntegrationTests.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.IntegrationTests\\Controllers\\MovementControllerIntegrationTests.cs",
-              "RelativeDocumentMoniker": "Tests\\Api.IntegrationTests\\Controllers\\MovementControllerIntegrationTests.cs",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.IntegrationTests\\Controllers\\MovementControllerIntegrationTests.cs",
-              "RelativeToolTip": "Tests\\Api.IntegrationTests\\Controllers\\MovementControllerIntegrationTests.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAowG8AAAASAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "WalletController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Controllers\\WalletController.cs",
+              "RelativeDocumentMoniker": "Api.GestionTransferenciaSaldo\\Controllers\\WalletController.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Controllers\\WalletController.cs",
+              "RelativeToolTip": "Api.GestionTransferenciaSaldo\\Controllers\\WalletController.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAowIEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T21:16:10.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T07:46:42.998Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "WalletControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.GestionTransferenciaSaldo.Tests\\Controllers\\WalletControllerTests.cs",
-              "RelativeDocumentMoniker": "Tests\\Api.GestionTransferenciaSaldo.Tests\\Controllers\\WalletControllerTests.cs",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.GestionTransferenciaSaldo.Tests\\Controllers\\WalletControllerTests.cs",
-              "RelativeToolTip": "Tests\\Api.GestionTransferenciaSaldo.Tests\\Controllers\\WalletControllerTests.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAjwFkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "MovementController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Controllers\\MovementController.cs",
+              "RelativeDocumentMoniker": "Api.GestionTransferenciaSaldo\\Controllers\\MovementController.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Controllers\\MovementController.cs",
+              "RelativeToolTip": "Api.GestionTransferenciaSaldo\\Controllers\\MovementController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAiwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T18:57:32.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T16:01:38.947Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Api.IntegrationTests",
+              "DocumentIndex": 6,
+              "Title": "Api.IntegrationTests.csproj",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj",
               "RelativeDocumentMoniker": "Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj",
               "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj",
               "RelativeToolTip": "Tests\\Api.IntegrationTests\\Api.IntegrationTests.csproj",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-05T19:24:28.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T19:24:28.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-05T05:45:21.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Api.GestionTransferenciaSaldo\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Api.GestionTransferenciaSaldo\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T21:36:18.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\User\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\User\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\User\\LoginRequest.cs",
+              "RelativeToolTip": "Application\\DTOs\\User\\LoginRequest.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T21:33:01.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\User\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\User\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\User\\LoginResponse.cs",
+              "RelativeToolTip": "Application\\DTOs\\User\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T21:33:26.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UpdateWalletRequest.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Wallet\\UpdateWalletRequest.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Wallet\\UpdateWalletRequest.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Wallet\\UpdateWalletRequest.cs",
+              "RelativeToolTip": "Application\\DTOs\\Wallet\\UpdateWalletRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T07:35:22.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WalletResponse.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Wallet\\WalletResponse.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Wallet\\WalletResponse.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Wallet\\WalletResponse.cs",
+              "RelativeToolTip": "Application\\DTOs\\Wallet\\WalletResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T07:34:40.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\User\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\User\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\User\\RegisterRequest.cs",
+              "RelativeToolTip": "Application\\DTOs\\User\\RegisterRequest.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T21:54:02.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateWalletRequest.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Wallet\\CreateWalletRequest.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Wallet\\CreateWalletRequest.cs",
+              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Wallet\\CreateWalletRequest.cs",
+              "RelativeToolTip": "Application\\DTOs\\Wallet\\CreateWalletRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T07:35:01.959Z"
             },
             {
               "$type": "Document",
@@ -456,8 +430,7 @@
               "RelativeToolTip": "Tests\\Application.Tests\\Mappings\\WalletMappingExtensionsTests.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAAAkwGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T18:40:09.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T18:40:09.376Z"
             },
             {
               "$type": "Document",
@@ -469,25 +442,11 @@
               "RelativeToolTip": "Tests\\Application.Tests\\Application.Tests.csproj",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-05T17:59:16.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T17:59:16.378Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Api.GestionTransferenciaSaldo.csproj",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj",
-              "RelativeDocumentMoniker": "Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj",
-              "RelativeToolTip": "Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-05T05:24:08.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "WalletMappingExtensions.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\Mappings\\WalletMappingExtensions.cs",
               "RelativeDocumentMoniker": "Application\\Mappings\\WalletMappingExtensions.cs",
@@ -495,12 +454,11 @@
               "RelativeToolTip": "Application\\Mappings\\WalletMappingExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T07:38:38.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T07:38:38.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "WalletService.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\Services\\WalletService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\WalletService.cs",
@@ -508,12 +466,11 @@
               "RelativeToolTip": "Application\\Services\\WalletService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:51:01.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T06:51:01.334Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "MovementService.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\Services\\MovementService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\MovementService.cs",
@@ -521,12 +478,11 @@
               "RelativeToolTip": "Application\\Services\\MovementService.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAwCkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T15:44:28.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T15:44:28.119Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Program.cs",
               "RelativeDocumentMoniker": "Api.GestionTransferenciaSaldo\\Program.cs",
@@ -534,12 +490,11 @@
               "RelativeToolTip": "Api.GestionTransferenciaSaldo\\Program.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAAACkAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:20:29.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T06:20:29.067Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\appsettings.json",
               "RelativeDocumentMoniker": "Api.GestionTransferenciaSaldo\\appsettings.json",
@@ -547,12 +502,11 @@
               "RelativeToolTip": "Api.GestionTransferenciaSaldo\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-05T06:24:24.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T06:24:24.02Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\User.cs",
@@ -560,12 +514,11 @@
               "RelativeToolTip": "Domain\\Entities\\User.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T05:58:31.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T05:58:31.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Domain\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IUserRepository.cs",
@@ -573,12 +526,11 @@
               "RelativeToolTip": "Domain\\Interfaces\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:02:41.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T06:02:41.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Infrastructure\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserRepository.cs",
@@ -586,12 +538,11 @@
               "RelativeToolTip": "Infrastructure\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA+wBQAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:18:37.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T06:18:37.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\AuthService.cs",
@@ -599,12 +550,11 @@
               "RelativeToolTip": "Application\\Services\\AuthService.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAqwDIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T21:34:05.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T21:34:05.86Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\Interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IAuthService.cs",
@@ -612,12 +562,11 @@
               "RelativeToolTip": "Application\\Interfaces\\IAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T21:34:41.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T21:34:41.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Middlewares\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "Api.GestionTransferenciaSaldo\\Middlewares\\ExceptionMiddleware.cs",
@@ -625,12 +574,11 @@
               "RelativeToolTip": "Api.GestionTransferenciaSaldo\\Middlewares\\ExceptionMiddleware.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T07:48:59.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T07:48:59.558Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "IWalletService.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\Interfaces\\IWalletService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IWalletService.cs",
@@ -638,12 +586,11 @@
               "RelativeToolTip": "Application\\Interfaces\\IWalletService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:49:18.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T06:49:18.623Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "MovementMappingExtensionsTests.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Application.Tests\\Mappings\\MovementMappingExtensionsTests.cs",
               "RelativeDocumentMoniker": "Tests\\Application.Tests\\Mappings\\MovementMappingExtensionsTests.cs",
@@ -651,12 +598,11 @@
               "RelativeToolTip": "Tests\\Application.Tests\\Mappings\\MovementMappingExtensionsTests.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAAAB0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T18:38:02.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T18:38:02.651Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "IMovementService.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\Interfaces\\IMovementService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IMovementService.cs",
@@ -664,12 +610,11 @@
               "RelativeToolTip": "Application\\Interfaces\\IMovementService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T15:42:06.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T15:42:06.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -677,12 +622,11 @@
               "RelativeToolTip": "README.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-08-05T20:24:05.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T20:24:05.76Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Infrastructure\\Infrastructure.csproj",
               "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
@@ -690,12 +634,11 @@
               "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAowA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-05T05:45:17.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T05:45:17.04Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
@@ -703,25 +646,11 @@
               "RelativeToolTip": "Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAUwB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:00:31.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T06:00:31.722Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-05T20:42:46.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 34,
               "Title": "MovementMappingExtensions.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\Mappings\\MovementMappingExtensions.cs",
               "RelativeDocumentMoniker": "Application\\Mappings\\MovementMappingExtensions.cs",
@@ -733,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 35,
               "Title": "MovementServiceTests.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Application.Tests\\Services\\MovementServiceTests.cs",
               "RelativeDocumentMoniker": "Tests\\Application.Tests\\Services\\MovementServiceTests.cs",
@@ -745,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 36,
               "Title": "WalletServiceTests.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Application.Tests\\Services\\WalletServiceTests.cs",
               "RelativeDocumentMoniker": "Tests\\Application.Tests\\Services\\WalletServiceTests.cs",
@@ -757,7 +686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 39,
               "Title": "ExceptionMiddlewareExtensions.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Middlewares\\ExceptionMiddlewareExtensions.cs",
               "RelativeDocumentMoniker": "Api.GestionTransferenciaSaldo\\Middlewares\\ExceptionMiddlewareExtensions.cs",
@@ -769,7 +698,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 37,
               "Title": "coverage.cobertura.xml",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Tests\\Application.Tests\\TestResults\\519da6b8-6374-4585-a166-d7bc42bc1b0b\\coverage.cobertura.xml",
               "RelativeDocumentMoniker": "Tests\\Application.Tests\\TestResults\\519da6b8-6374-4585-a166-d7bc42bc1b0b\\coverage.cobertura.xml",
@@ -781,7 +710,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 38,
               "Title": "Application.csproj",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\Application.csproj",
               "RelativeDocumentMoniker": "Application\\Application.csproj",
@@ -793,7 +722,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 40,
               "Title": "CreateMovementRequest.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Movement\\CreateMovementRequest.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Movement\\CreateMovementRequest.cs",
@@ -805,7 +734,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 41,
               "Title": "MovementResponse.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Application\\DTOs\\Movement\\MovementResponse.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Movement\\MovementResponse.cs",
@@ -817,7 +746,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 42,
               "Title": "MovementType.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Domain\\Enums\\MovementType.cs",
               "RelativeDocumentMoniker": "Domain\\Enums\\MovementType.cs",
@@ -829,7 +758,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 43,
               "Title": "MovementConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Infrastructure\\Persistence\\Configurations\\MovementConfiguration.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Configurations\\MovementConfiguration.cs",
@@ -841,7 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 44,
               "Title": "IMovementRepository.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Domain\\Interfaces\\IMovementRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IMovementRepository.cs",
@@ -853,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 46,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Infrastructure\\Persistence\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\AppDbContext.cs",
@@ -865,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 45,
               "Title": "MovementRepository.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Infrastructure\\Repositories\\MovementRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\MovementRepository.cs",
@@ -877,7 +806,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 47,
               "Title": "IWalletRepository.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Domain\\Interfaces\\IWalletRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IWalletRepository.cs",
@@ -889,7 +818,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 48,
               "Title": "Api.GestionTransferenciaSaldo.http",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.http",
               "RelativeDocumentMoniker": "Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.http",
@@ -901,7 +830,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 49,
               "Title": "Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.304\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
@@ -913,7 +842,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 50,
               "Title": "WalletRepository.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Infrastructure\\Repositories\\WalletRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\WalletRepository.cs",
@@ -925,7 +854,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 51,
               "Title": "WalletConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Infrastructure\\Persistence\\Configurations\\WalletConfiguration.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Configurations\\WalletConfiguration.cs",
@@ -937,7 +866,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 52,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
@@ -949,7 +878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 53,
               "Title": "20250805063416_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Infrastructure\\Migrations\\20250805063416_InitialCreate.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250805063416_InitialCreate.cs",
@@ -961,7 +890,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 54,
               "Title": "Api.GestionTransferenciaSaldo",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj",
               "RelativeDocumentMoniker": "Api.GestionTransferenciaSaldo\\Api.GestionTransferenciaSaldo.csproj",
@@ -972,7 +901,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 55,
               "Title": "Wallet.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Domain\\Entities\\Wallet.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Wallet.cs",
@@ -984,7 +913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 56,
               "Title": "Movement.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Domain\\Entities\\Movement.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Movement.cs",
@@ -993,18 +922,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T05:57:57.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "Domain.csproj",
-              "DocumentMoniker": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Domain\\Domain.csproj",
-              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
-              "ToolTip": "C:\\Users\\USER\\Glenn\\ProyectosNET\\Domain\\Domain.csproj",
-              "RelativeToolTip": "Domain\\Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-05T05:45:21.938Z"
             }
           ]
         }

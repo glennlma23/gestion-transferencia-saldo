@@ -461,6 +461,7 @@ C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\Api.Gest.30009546.Up2Date
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\Api.GestionTransferenciaSaldo.dll
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\refint\Api.GestionTransferenciaSaldo.dll
@@ -468,4 +469,3 @@ C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\Api.GestionTransferenciaSaldo.pdb
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\Api.GestionTransferenciaSaldo.genruntimeconfig.cache
 C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\ref\Api.GestionTransferenciaSaldo.dll
-C:\Users\USER\Glenn\ProyectosNET\Api.GestionTransferenciaSaldo\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

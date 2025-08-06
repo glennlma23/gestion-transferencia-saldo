@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using System.Collections.Generic;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Api.GestionTransferenciaSaldo.Controllers;
 using Xunit;
@@ -22,6 +23,16 @@ namespace Api.GestionTransferenciaSaldo.Tests.Controllers
         {
             _walletServiceMock = new Mock<IWalletService>();
             _controller = new WalletController(_walletServiceMock.Object);
+        }
+
+        private ClaimsPrincipal GetFakeUser(string documentId)
+        {
+            var claims = new List<Claim>
+            {
+                new Claim("documentId", documentId)
+            };
+            var identity = new ClaimsIdentity(claims, "TestAuthType");
+            return new ClaimsPrincipal(identity);
         }
 
         [Fact]
@@ -88,6 +99,14 @@ namespace Api.GestionTransferenciaSaldo.Tests.Controllers
             var wallet = request.ToEntity(documentId);
             wallet.Id = 1;
 
+            _controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext
+                {
+                    User = GetFakeUser(documentId)
+                }
+            };
+
             _walletServiceMock.Setup(s => s.CreateAsync(It.IsAny<Wallet>())).ReturnsAsync(wallet);
 
             var result = await _controller.Create(request);
@@ -95,42 +114,100 @@ namespace Api.GestionTransferenciaSaldo.Tests.Controllers
             var createdResult = result.Result as CreatedAtActionResult;
             createdResult.Should().NotBeNull();
             var response = createdResult!.Value as WalletResponse;
-            response!.DocumentId.Should().Be("123");
+            response!.DocumentId.Should().Be(documentId);
         }
 
         [Fact]
-        public async Task Update_ShouldReturnNoContent_WhenWalletExists()
+        public async Task Update_ShouldReturnNoContent_WhenWalletExists_AndBelongsToUser()
         {
-            var wallet = new Wallet { Id = 1, Name = "Old Name", DocumentId = "123" };
+            var documentId = "123";
+            var wallet = new Wallet { Id = 1, Name = "Old Name", DocumentId = documentId };
             var request = new UpdateWalletRequest { Name = "New Name" };
+
+            _controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext
+                {
+                    User = GetFakeUser(documentId)
+                }
+            };
 
             _walletServiceMock.Setup(s => s.GetByIdAsync(1)).ReturnsAsync(wallet);
 
             var result = await _controller.Update(1, request);
 
             result.Should().BeOfType<NoContentResult>();
+        }
+
+        [Fact]
+        public async Task Update_ShouldReturnUnauthorized_WhenWalletNotOwned()
+        {
+            var wallet = new Wallet { Id = 1, Name = "Old", DocumentId = "999" };
+            var request = new UpdateWalletRequest { Name = "New" };
+
+            _controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext
+                {
+                    User = GetFakeUser("123")
+                }
+            };
+
+            _walletServiceMock.Setup(s => s.GetByIdAsync(1)).ReturnsAsync(wallet);
+
+            var result = await _controller.Update(1, request);
+
+            result.Should().BeOfType<ForbidResult>();
         }
 
         [Fact]
         public async Task Update_ShouldReturnNotFound_WhenWalletDoesNotExist()
         {
-            var request = new UpdateWalletRequest { Name = "New Name" };
             _walletServiceMock.Setup(s => s.GetByIdAsync(1)).ReturnsAsync((Wallet?)null);
 
-            var result = await _controller.Update(1, request);
+            var result = await _controller.Update(1, new UpdateWalletRequest { Name = "Doesn't Matter" });
 
             result.Should().BeOfType<NotFoundResult>();
         }
 
         [Fact]
-        public async Task Delete_ShouldReturnNoContent_WhenWalletExists()
+        public async Task Delete_ShouldReturnNoContent_WhenWalletOwnedByUser()
         {
             var wallet = new Wallet { Id = 1, DocumentId = "123" };
+
+            _controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext
+                {
+                    User = GetFakeUser("123")
+                }
+            };
+
             _walletServiceMock.Setup(s => s.GetByIdAsync(1)).ReturnsAsync(wallet);
 
             var result = await _controller.Delete(1);
 
             result.Should().BeOfType<NoContentResult>();
+        }
+
+        [Fact]
+        public async Task Delete_ShouldReturnUnauthorized_WhenWalletNotOwned()
+        {
+            var wallet = new Wallet { Id = 1, DocumentId = "999" };
+
+            _controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext
+                {
+                    User = GetFakeUser("123")
+                }
+            };
+
+            _walletServiceMock.Setup(s => s.GetByIdAsync(1)).ReturnsAsync(wallet);
+
+            var result = await _controller.Delete(1);
+
+            result.Should().BeOfType<ForbidResult>();
         }
 
         [Fact]
